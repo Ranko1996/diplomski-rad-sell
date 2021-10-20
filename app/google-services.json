@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1039188680171",
+    "project_id": "sell-diplomski-rad",
+    "storage_bucket": "sell-diplomski-rad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039188680171:android:9c55dd62d76fe18d9b0dae",
+        "android_client_info": {
+          "package_name": "ba.sum.fpmoz.rkoturic.sell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039188680171-snmij179nub71fmoa963c21139crc7rs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrwob7JGWjNQieyYeMPbRFbAnRcQyVRIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039188680171-snmij179nub71fmoa963c21139crc7rs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

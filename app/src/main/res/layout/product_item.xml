@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="7dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/collapsedRelLayout"
+            >
+
+            <ImageView
+                android:id="@+id/productImg"
+                android:layout_width="350dp"
+                android:layout_height="220dp"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:id="@+id/productNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productImg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="Book Name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productNameTxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:text="Price"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/productPriceTxt"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_below="@id/productPriceTxt"
+                android:id="@+id/btnDownArrow"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collapsedRelLayout"
+            android:id="@+id/expandedReyLayout"
+           android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDescription"
+                android:text="Description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:hint="Unesite vašu adresu"
+                android:id="@+id/addressInp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtDescription"
+                android:layout_marginTop="7dp">
+            </EditText>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/addressInp"
+                android:layout_centerHorizontal="true"
+                android:text="Naruči"
+                app:backgroundTint="@color/orange"
+                android:shadowColor="#FDFCFC"
+                android:id="@+id/orderBtn"
+                android:layout_marginTop="7dp">
+            </Button>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_up_arrow"
+                android:layout_below="@+id/orderBtn"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnUpArrow"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

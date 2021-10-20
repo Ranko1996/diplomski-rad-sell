@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profilePictureUser"
+        android:layout_width="210dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_online_shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilePictureUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Vaša e-mail adresa"
+        app:layout_constraintEnd_toEndOf="@+id/profilePictureUser"
+        app:layout_constraintStart_toStartOf="@+id/profilePictureUser"
+        app:layout_constraintTop_toBottomOf="@+id/profilePictureUser" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="32dp"
+        android:layout_height="19dp"
+        android:layout_below="@id/profilePictureUser"
+        android:layout_marginEnd="8dp"
+        android:layout_toLeftOf="@id/textviewas"
+        android:src="@drawable/ic_view_email"
+        app:layout_constraintBottom_toBottomOf="@+id/textviewas"
+        app:layout_constraintEnd_toStartOf="@+id/textviewas"
+        app:layout_constraintTop_toTopOf="@+id/textviewas" />
+
+    <TextView
+        android:id="@+id/userMailLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewas" />
+
+
+    <ImageView
+        android:id="@+id/addNewBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:src="@drawable/ic_select_upload"
+        android:shadowColor="#FDFCFC"/>
+
+    <ImageView
+        android:id="@+id/listProdBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addNewBtn"
+        app:layout_constraintStart_toEndOf="@+id/addNewBtn"
+        app:layout_constraintTop_toTopOf="@+id/addNewBtn"
+        android:src="@drawable/ic_view_upload" />
+
+    <ImageView
+        android:id="@+id/showMsgBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addNewBtn"
+        app:layout_constraintEnd_toStartOf="@+id/addNewBtn"
+        app:layout_constraintTop_toTopOf="@+id/addNewBtn"
+        android:src="@drawable/ic_view_message2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="365dp" />
+
+    <Button
+        android:id="@+id/logOutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        android:shadowColor="#FDFCFC"
+        android:text="Odjavi se"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

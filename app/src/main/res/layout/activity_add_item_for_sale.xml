@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AddItemForSale">
+
+
+    <EditText
+        android:id="@+id/productName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Unesite ime proizvoda"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/productDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Unesite opis proizvoda"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+
+    <ImageView
+        android:id="@+id/productImg"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productDesc" />
+
+
+    <ProgressBar
+        android:id="@+id/uploadProgress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/productImg"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <ImageView
+        android:id="@+id/chooseProductBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_select_upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadProgress" />
+
+    <ImageView
+        android:id="@+id/showProductsBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_view_upload"
+        app:layout_constraintEnd_toStartOf="@+id/chooseProductBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chooseProductBtn" />
+
+    <ImageView
+        android:id="@+id/addProductBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_finish_upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chooseProductBtn"
+        app:layout_constraintTop_toBottomOf="@+id/uploadProgress" />
+
+    <EditText
+        android:id="@+id/productPrice"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite cijenu"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/productName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productName"
+        app:layout_constraintTop_toTopOf="@+id/productName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
